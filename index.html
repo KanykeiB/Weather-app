@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <section class="vh-100">
+        <div class="container-Main">
+          <div class="row d-flex justify-content-center align-items-center ">
+            <div class="col-md-8 col-lg-6 col-xl-4">  
+              <form class="input-group rounded mb-4" id="formClass">
+                <input type="search" id="input" name="content" class="form-control rounded" placeholder="Search for a city" aria-label="Search"
+                  aria-describedby="search-addon"/>
+              </form>
+            </div>
+            <div class="col-md-12 col-lg-12 col-xl-12">  
+              
+                <div class="containerInner">
+                   <div class="default-text ">
+                        <p class="innerText">Please enter the name of the city and press to see results</p>
+                   </div>
+                   <div class="weatherCard hide-panel">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <!-- Right panel -->
+                        <div class="rightCont" style="text-align: left;">
+                          <h5><spam id="cityName"></spam><spam id="countryName"></spam><spam id="cityCode"></spam></h5>
+                          <h6 id="localDate"></h6>
+                          <h5 id="localTime"></h5>
+                        </div>
+                        <!-- Center panel -->
+                        <div class="centerCont" style="margin: 10px auto;padding:0;">
+                          <div class="row">
+                            <div>
+                              <img id ="main-icon" class="col-md-3" src=""></img>
+                              <span id="mainTemperature"></span>
+                            </div>
+                            <p id="stateOfWeather" ></p>
+                          </div>
+                        </div>
+                        
+                        <!-- Left panel -->
+                        <div class="leftCont" style="text-align: right;">
+                          <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+                            <h6 id="feelsLike"></h6>
+                          </div>
+                          <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+                            <h6 id="humidity"></h6>
+                          </div>
+                          <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+                            <h6 id="wind"></h6>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+      
+        </div>
+      </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
